@@ -1,0 +1,6 @@
+com\xevgnov\stereotypes\without\spring\boot\Application.class
+com\xevgnov\stereotypes\without\spring\boot\config\ApplicationConfiguration.class
+com\xevgnov\stereotypes\without\spring\boot\domain\Task.class
+com\xevgnov\stereotypes\without\spring\boot\utility\TaskPrinter.class
+com\xevgnov\stereotypes\without\spring\boot\service\TaskService.class
+com\xevgnov\stereotypes\without\spring\boot\service\TaskServiceImpl.class

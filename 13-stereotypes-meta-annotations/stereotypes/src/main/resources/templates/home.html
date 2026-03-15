@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Stereotypes and meta-annotations</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<form action="#" th:action="@{/gui/add}" th:object="${form}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <br>
+    Task name:     <input type="text" th:field="*{name}" />
+    <br><br>
+    Task priority: <input type="text" th:field="*{priority}" />
+    <br><br>
+    <input type="submit" value="Submit" />
+    <br><br>
+</form>
+<table>
+    <thead>
+        <tr>
+            <th> Task </th>
+            <th> Priority </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:if="${tasks.empty}">
+            <td colspan="2"> No Tasks Available </td>
+        </tr>
+        <tr th:each="task : ${tasks}">
+            <td><span th:text="${task.name}"> Task </span></td>
+            <td><span th:text="${task.priority}"> Priority </span></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>

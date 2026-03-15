@@ -1,0 +1,7 @@
+com\xevgnov\dependency\inversion\no\spring\service\TimeService.class
+com\xevgnov\dependency\inversion\no\spring\service\DateService.class
+com\xevgnov\dependency\inversion\no\spring\service\DateServiceImpl.class
+com\xevgnov\dependency\inversion\no\spring\service\DateTimeService.class
+com\xevgnov\dependency\inversion\no\spring\service\TimeServiceImpl.class
+com\xevgnov\dependency\inversion\no\spring\Application.class
+com\xevgnov\dependency\inversion\no\spring\service\DateTimeServiceImpl.class
