@@ -22,36 +22,36 @@
     </properties>
 
     <modules>
-        <module>1-understanding-spring/di</module>
-        <module>1-understanding-spring/spring-di</module>
-        <module>2-context-and-beans/spring-boot-context</module>
-        <module>2-context-and-beans/spring-conext</module>
-        <module>3-context-lifecycle/spring-boot-context-lifecycle</module>
-        <module>3-context-lifecycle/spring-context-lifecycle</module>
-        <module>4-context-lifecycle-issues/spring-boot-context-beans-not-unique</module>
-        <module>4-context-lifecycle-issues/spring-boot-context-getting-beans-with-same-types</module>
-        <module>4-context-lifecycle-issues/spring-boot-context-bean-already-registered</module>
-        <module>5-context-types/spring-boot-non-web-annotations-context</module>
-        <module>5-context-types/spring-non-web-context-types</module>
-        <module>5-context-types/spring-web-context-types</module>
-        <module>5-context-types/spring-boot-web-annotations-context</module>
-        <module>5-context-types/spring-boot-non-web-xml-context</module>
-        <module>5-context-types/spring-boot-web-xml-context</module>
-        <module>6-configuration-types/spring-annotation-based-config</module>
-        <module>6-configuration-types/spring-java-config</module>
-        <module>6-configuration-types/spring-mixed-config</module>
-        <module>6-configuration-types/spring-xml-config</module>
-        <module>7-IoC-DI/ioc-di-examples-autowired-to-specific-constructor</module>
-        <module>7-IoC-DI/ioc-di-examples-autowired</module>
-        <module>7-IoC-DI/ioc-di-examples-configuration</module>
-        <module>7-IoC-DI/ioc-di-examples-inject-context</module>
-        <module>7-IoC-DI/ioc-di-examples-lookup</module>
-        <module>7-IoC-DI/ioc-di-examples-omit-autowired</module>
-        <module>8-bean-life-cycle/bean-life-cycle</module>
-        <module>9-autowire-injection-types/autowire-constructor</module>
-        <module>9-autowire-injection-types/autowire-mixed</module>
-        <module>9-autowire-injection-types/autowire-field</module>
-        <module>9-autowire-injection-types/autowire-method</module>
+        <module>01-understanding-spring/di</module>
+        <module>01-understanding-spring/spring-di</module>
+        <module>02-context-and-beans/spring-boot-context</module>
+        <module>02-context-and-beans/spring-conext</module>
+        <module>03-context-lifecycle/spring-boot-context-lifecycle</module>
+        <module>03-context-lifecycle/spring-context-lifecycle</module>
+        <module>04-context-lifecycle-issues/spring-boot-context-beans-not-unique</module>
+        <module>04-context-lifecycle-issues/spring-boot-context-getting-beans-with-same-types</module>
+        <module>04-context-lifecycle-issues/spring-boot-context-bean-already-registered</module>
+        <module>05-context-types/spring-boot-non-web-annotations-context</module>
+        <module>05-context-types/spring-non-web-context-types</module>
+        <module>05-context-types/spring-web-context-types</module>
+        <module>05-context-types/spring-boot-web-annotations-context</module>
+        <module>05-context-types/spring-boot-non-web-xml-context</module>
+        <module>05-context-types/spring-boot-web-xml-context</module>
+        <module>06-configuration-types/spring-annotation-based-config</module>
+        <module>06-configuration-types/spring-java-config</module>
+        <module>06-configuration-types/spring-mixed-config</module>
+        <module>06-configuration-types/spring-xml-config</module>
+        <module>07-IoC-DI/ioc-di-examples-autowired-to-specific-constructor</module>
+        <module>07-IoC-DI/ioc-di-examples-autowired</module>
+        <module>07-IoC-DI/ioc-di-examples-configuration</module>
+        <module>07-IoC-DI/ioc-di-examples-inject-context</module>
+        <module>07-IoC-DI/ioc-di-examples-lookup</module>
+        <module>07-IoC-DI/ioc-di-examples-omit-autowired</module>
+        <module>08-bean-life-cycle/bean-life-cycle</module>
+        <module>09-autowire-injection-types/autowire-constructor</module>
+        <module>09-autowire-injection-types/autowire-mixed</module>
+        <module>09-autowire-injection-types/autowire-field</module>
+        <module>09-autowire-injection-types/autowire-method</module>
         <module>10-autowire-not-required/not-required-injection-problem</module>
         <module>10-autowire-not-required/not-required-injection-autowired-required</module>
         <module>10-autowire-not-required/not-required-injection-autowired-optional</module>

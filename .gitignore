@@ -26,6 +26,8 @@ replay_pid*
 
 ### maven ###
 .mvn/
+/target/
+**/target/
 
 ### VS Code ###
 .vscode/
