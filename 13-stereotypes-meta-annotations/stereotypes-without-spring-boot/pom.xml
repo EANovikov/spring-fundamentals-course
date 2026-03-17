@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.xevgnov.spring.interview</groupId>
-        <artifactId>spring-questions-training</artifactId>
+        <artifactId>spring-fundamentals-course</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
