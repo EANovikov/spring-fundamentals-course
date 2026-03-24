@@ -4,6 +4,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
@@ -20,7 +21,7 @@ public class Application {
     }
 
 
-    //to run the logic on application startup, no direct access to Spring context
+//    to run the logic on application startup, no direct access to Spring context
     @Bean
     CommandLineRunner commandLineRunner(DateTimeService dateTimeService) {
         return args -> dateTimeService.printDateTime();
@@ -29,8 +30,8 @@ public class Application {
     // Alternative way to run any logic after application start is to access context directly
 
 //	public static void main(String[] args) {
-//		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
-//		DateTimeService dateTimeService = context.getBean(DateTimeServiceImpl.class);
+//		ApplicationContext context = SpringApplication.run(Application.class, args);
+//		DateTimeService dateTimeService = context.getBean(DateTimeService.class);
 //		System.out.println("on application start: " + context.getClass());
 //		dateTimeService.printDateTime();
 //	}

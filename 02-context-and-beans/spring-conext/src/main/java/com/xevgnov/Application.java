@@ -1,10 +1,8 @@
 package com.xevgnov;
 
+import com.xevgnov.service.DateTimeService;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.xevgnov.service.DateTimeService;
-import com.xevgnov.service.DateTimeServiceImpl;
 
 
 public class Application {
@@ -14,7 +12,7 @@ public class Application {
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
         context.registerShutdownHook();
         // Getting a bean
-        DateTimeService dateTimeService = context.getBean(DateTimeServiceImpl.class);
+        DateTimeService dateTimeService = context.getBean(DateTimeService.class);
         dateTimeService.printDateTime();
     }
 
