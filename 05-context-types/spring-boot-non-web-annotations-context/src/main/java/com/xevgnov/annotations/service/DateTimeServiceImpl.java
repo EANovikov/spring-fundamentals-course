@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class DateTimeServiceImpl implements DateTimeService {
 
-    private DateService dateService;
-    private TimeService timeService;
+    private final DateService dateService;
+    private final TimeService timeService;
 
     public DateTimeServiceImpl(DateService dateService, TimeService timeService) {
         this.dateService = dateService;

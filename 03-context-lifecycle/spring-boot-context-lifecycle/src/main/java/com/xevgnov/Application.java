@@ -11,19 +11,19 @@ import com.xevgnov.service.DateTimeService;
 public class Application {
 
     // call SpringApplication.run to configure and create the context
-	// if we need to run any logic right after application start, ApplicationRunner or CommandLineRunner bean can be used
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    // if we need to run any logic right after application start, ApplicationRunner or CommandLineRunner bean can be used
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 
 
-	//to run the logic on application startup
-	@Bean
-	CommandLineRunner commandLineRunner(DateTimeService dateTimeService) {
-		return args -> dateTimeService.printDateTime();
-	}
+    //to run the logic on application startup
+    @Bean
+    CommandLineRunner commandLineRunner(DateTimeService dateTimeService) {
+        return args -> dateTimeService.printDateTime();
+    }
 
-	// Alternative way to run any logic after application start is to access context directly 
+    // Alternative way to run any logic after application start is to access context directly
 
 //	public static void main(String[] args) {
 //		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);

@@ -31,7 +31,7 @@ public class Application {
 
 //	public static void main(String[] args) {
 //		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
-//		DateTimeService dateTimeService = context.getBean(DateTimeServiceImpl.class);
+//		DateTimeService dateTimeService = context.getBean(DateTimeService.class);
 //		System.out.println("on application start: " + context.getClass());
 //		dateTimeService.printDateTime();
 //	}

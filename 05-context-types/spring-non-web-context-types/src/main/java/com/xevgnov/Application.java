@@ -19,8 +19,7 @@ public class Application {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
         context.registerShutdownHook();
-        DateTimeService dateTimeService = context.getBean(DateTimeServiceImpl.class);
-        context.getBean("dateTimeServiceImpl");
+        DateTimeService dateTimeService = context.getBean(DateTimeService.class);
         dateTimeService.printDateTime();
     }
 
@@ -28,9 +27,8 @@ public class Application {
 //    public static void main(String[] args) {
 //        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("application-config.xml");
 //        context.registerShutdownHook();
-//        DateTimeService dateTimeService = context.getBean(DateTimeServiceImpl.class);
-//            context.getBean("dateTimeServiceImpl");
-//            dateTimeService.printDateTime();
+//        DateTimeService dateTimeService = context.getBean(DateTimeService.class);
+//        dateTimeService.printDateTime();
 //    }
 
 
@@ -41,8 +39,7 @@ public class Application {
 //        // Update the path in FileSystemXmlApplicationContext constructor
 //        ConfigurableApplicationContext context = new FileSystemXmlApplicationContext("C:/Users/ENovikov/application-config.xml");
 //        context.registerShutdownHook();
-//        DateTimeService dateTimeService = context.getBean(DateTimeServiceImpl.class);
-//        context.getBean("dateTimeServiceImpl");
+//        DateTimeService dateTimeService = context.getBean(DateTimeService.class);
 //        dateTimeService.printDateTime();
 //    }
 
