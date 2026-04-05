@@ -18,8 +18,7 @@ public class Application {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
         context.registerShutdownHook();
-        DateTimeService dateTimeService = context.getBean(DateTimeServiceImpl.class);
-        context.getBean("dateTimeService");
+        DateTimeService dateTimeService = context.getBean(DateTimeService.class);
         dateTimeService.printDateTime();
     }
 
