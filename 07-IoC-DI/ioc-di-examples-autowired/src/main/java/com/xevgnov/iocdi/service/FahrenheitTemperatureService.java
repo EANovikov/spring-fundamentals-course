@@ -22,7 +22,7 @@ public class FahrenheitTemperatureService implements TemperatureService {
 
     @Override
     public void print(double temperature) {
-        printService.print(temperature, TemperatureMode.FARENHEIT);
+        printService.print(temperature, TemperatureMode.FAHRENHEIT);
     }
 
 }
