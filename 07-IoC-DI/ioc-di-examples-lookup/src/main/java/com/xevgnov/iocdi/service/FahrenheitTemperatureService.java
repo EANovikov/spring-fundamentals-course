@@ -18,7 +18,7 @@ public class FahrenheitTemperatureService implements TemperatureService {
     @Override
     public void print(double temperature) {
         PrintService printService = getPrintService();
-        printService.print(temperature, TemperatureMode.FARENHEIT);
+        printService.print(temperature, TemperatureMode.FAHRENHEIT);
     }
 
     @Lookup

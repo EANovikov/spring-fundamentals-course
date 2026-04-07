@@ -26,7 +26,7 @@ public class FahrenheitTemperatureService implements TemperatureService {
     public void print(double temperature) {
         // fetching PrintServiceImpl from IoC container
         PrintService printService = context.getBean(PrintService.class);
-        printService.print(temperature, TemperatureMode.FARENHEIT);
+        printService.print(temperature, TemperatureMode.FAHRENHEIT);
     }
 
 }

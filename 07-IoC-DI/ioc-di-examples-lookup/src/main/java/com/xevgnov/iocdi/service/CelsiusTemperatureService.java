@@ -12,7 +12,7 @@ public class CelsiusTemperatureService implements TemperatureService {
 
     @Override
     public Temperature convert(double temperature) {
-        return new Temperature(temperature * 1.8 + 32.0, TemperatureMode.FARENHEIT);
+        return new Temperature(temperature * 1.8 + 32.0, TemperatureMode.FAHRENHEIT);
     }
 
     @Override
