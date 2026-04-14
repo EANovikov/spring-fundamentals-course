@@ -24,6 +24,7 @@ public class Application {
 	@Bean
 	CommandLineRunner commandLineRunner(RestaurantService restaurantService) {
 		restaurantService.makeOrder(Order.builder()
+                .id(UUID.randomUUID())
 				.clientEmail("john.doe@gmail.com")
 				.deliveryAddress("Wroclaw, Plac Konstytucji 3 Maja")
 				.dishes(List.of("Pizza", "Chips", "Gyros"))
