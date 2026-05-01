@@ -46,8 +46,6 @@ public class OrderServiceImpl implements OrderService {
       this.deliveryService = deliveryService;
    }
 
-
-
    @Override
    public UUID placeOrder(Order order) {
       log.info("Order {} is accepted", order.getId());

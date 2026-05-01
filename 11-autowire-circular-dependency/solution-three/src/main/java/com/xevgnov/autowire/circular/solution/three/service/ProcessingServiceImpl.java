@@ -1,5 +1,6 @@
 package com.xevgnov.autowire.circular.solution.three.service;
 
+import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -28,6 +29,7 @@ public class ProcessingServiceImpl implements ProcessingService {
     @Override
     public void process(Order order) {
         try {
+            order.setId(UUID.randomUUID());
             order.setStatus(Status.PROCESSING);
             long orderProcessingTime = ThreadLocalRandom.current().nextLong(1000L, 2000L);
             Thread.sleep(orderProcessingTime);

@@ -46,6 +46,7 @@ public class OrderServiceImpl implements OrderService {
    public UUID placeOrder(Order order) {
       log.info("Order {} is accepted", order.getId());
       try {
+         order.setId(UUID.randomUUID());
          order.setStatus(Status.NEW);
          orders.put(order.getId(), order);
          processingService.process(order);
