@@ -12,7 +12,7 @@ import com.xevgnov.stereotypes.without.spring.boot.domain.Task;
 @Service
 public class TaskServiceImpl implements TaskService {
 
-    private Map<Long, Task> tasks = new HashMap<>();
+    private final Map<Long, Task> tasks = new HashMap<>();
 
     @Override
     public Task add(Task task) {

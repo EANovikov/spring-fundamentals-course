@@ -15,18 +15,20 @@ public class ReportProcessorServiceImpl implements ReportProcessorService {
 
     private final Map<String, ReportService> reportServiceMap;
 
-    public ReportProcessorServiceImpl(List<ReportService> reportServiceList, Set<ReportService> reportServiceSet, Map<String, ReportService> reportServiceMap) {
+    public ReportProcessorServiceImpl(List<ReportService> reportServiceList,
+                                      Set<ReportService> reportServiceSet,
+                                      Map<String, ReportService> reportServiceMap) {
         this.reportServiceList = reportServiceList;
         this.reportServiceSet = reportServiceSet;
         this.reportServiceMap = reportServiceMap;
     }
 
     //Example for List
-    @Override
-    public void process(String data) {
-        reportServiceList
-                .forEach(entry -> entry.printReport(data));
-    }
+//    @Override
+//    public void process(String data) {
+//        reportServiceList
+//                .forEach(entry -> entry.printReport(data));
+//    }
 
     //Example for Set
 //    @Override
@@ -38,11 +40,11 @@ public class ReportProcessorServiceImpl implements ReportProcessorService {
     //Example for Map
     //Spring is able to assume, that Map key is a bean name
     //and the keys will contains bean names: htmlReportService, textReportService, xmlReportService
-//    @Override
-//    public void process(String data) {
-//        reportServiceMap.forEach((key, value) -> {
-//            System.out.println("bean name: " + key);
-//            value.printReport(data);
-//        });
-//    }
+    @Override
+    public void process(String data) {
+        reportServiceMap.forEach((key, value) -> {
+            System.out.println("bean name: " + key);
+            value.printReport(data);
+        });
+    }
 }
