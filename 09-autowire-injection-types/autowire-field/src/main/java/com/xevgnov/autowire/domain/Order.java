@@ -1,19 +1,19 @@
 package com.xevgnov.autowire.domain;
 
+import lombok.Builder;
+import lombok.Data;
+
 import java.util.List;
 import java.util.UUID;
 
-import lombok.Builder;
-import lombok.Value;
-
+@Data
 @Builder
-@Value
 public class Order {
 
-  private UUID id = UUID.randomUUID();  
-  private String clientEmail;  
-  private String deliveryAddress;
-  private List<String> dishes;
-  private UUID paymentId;
-  
+    private UUID id = UUID.randomUUID();
+    private String clientEmail;
+    private String deliveryAddress;
+    private List<String> dishes;
+    private UUID paymentId;
+
 }

@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.UUID;
 
 import lombok.Builder;
+import lombok.Data;
 import lombok.Value;
 
 @Builder
-@Value
+@Data
 public class Order {
 
   private UUID id = UUID.randomUUID();  

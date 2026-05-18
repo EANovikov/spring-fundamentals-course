@@ -2,7 +2,7 @@ package com.xevgnov.collection.service;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("xmlService")
 public class XmlReportService implements ReportService {
 
     @Override

@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootApplication
 public class Application {
 
-    /* Application fails on start. Sample ouptut:
+    /* Application fails on start. Sample output:
 	 * org.springframework.beans.factory.UnsatisfiedDependencyException: 
 	 * Error creating bean with name 'orderController' defined in file 
 	 * [C:\Users\ENovikov\Projects\spring-questions-training\6-autowire-circular-dependency\circular-dependency-problem\target\classes\com\xevgnov\autowire\circular\problem\controller\OrderController.class]: 

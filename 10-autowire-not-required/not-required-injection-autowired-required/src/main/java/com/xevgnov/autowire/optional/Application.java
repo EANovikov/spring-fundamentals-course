@@ -26,6 +26,7 @@ public class Application {
     CommandLineRunner commandLineRunner(@Autowired RestaurantService restaurantService,
                                         @Autowired(required = false) AnalyticService analyticService) {
         restaurantService.makeOrder(Order.builder()
+                .id(UUID.randomUUID())
                 .clientEmail("john.doe@gmail.com")
                 .deliveryAddress("Wroclaw, Plac Konstytucji 3 Maja")
                 .dishes(List.of("Pizza", "Chips", "Gyros"))
